@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kaiju/sim/geant4
+CMAKE_SOURCE_DIR = /home/kaiju/github/research/detector_sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kaiju/sim/geant4/build
+CMAKE_BINARY_DIR = /home/kaiju/github/research/detector_sim/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sim.dir/depend.make
@@ -72,128 +72,142 @@ include CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/sim.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/sim.cc.o: ../sim.cc
 CMakeFiles/sim.dir/sim.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/sim.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/sim.cc.o -MF CMakeFiles/sim.dir/sim.cc.o.d -o CMakeFiles/sim.dir/sim.cc.o -c /home/kaiju/sim/geant4/sim.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/sim.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/sim.cc.o -MF CMakeFiles/sim.dir/sim.cc.o.d -o CMakeFiles/sim.dir/sim.cc.o -c /home/kaiju/github/research/detector_sim/sim.cc
 
 CMakeFiles/sim.dir/sim.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/sim.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/sim.cc > CMakeFiles/sim.dir/sim.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/sim.cc > CMakeFiles/sim.dir/sim.cc.i
 
 CMakeFiles/sim.dir/sim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/sim.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/sim.cc -o CMakeFiles/sim.dir/sim.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/sim.cc -o CMakeFiles/sim.dir/sim.cc.s
 
 CMakeFiles/sim.dir/action.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/action.cc.o: ../action.cc
 CMakeFiles/sim.dir/action.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/action.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/action.cc.o -MF CMakeFiles/sim.dir/action.cc.o.d -o CMakeFiles/sim.dir/action.cc.o -c /home/kaiju/sim/geant4/action.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/action.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/action.cc.o -MF CMakeFiles/sim.dir/action.cc.o.d -o CMakeFiles/sim.dir/action.cc.o -c /home/kaiju/github/research/detector_sim/action.cc
 
 CMakeFiles/sim.dir/action.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/action.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/action.cc > CMakeFiles/sim.dir/action.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/action.cc > CMakeFiles/sim.dir/action.cc.i
 
 CMakeFiles/sim.dir/action.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/action.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/action.cc -o CMakeFiles/sim.dir/action.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/action.cc -o CMakeFiles/sim.dir/action.cc.s
 
 CMakeFiles/sim.dir/construction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/construction.cc.o: ../construction.cc
 CMakeFiles/sim.dir/construction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/construction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/construction.cc.o -MF CMakeFiles/sim.dir/construction.cc.o.d -o CMakeFiles/sim.dir/construction.cc.o -c /home/kaiju/sim/geant4/construction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/construction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/construction.cc.o -MF CMakeFiles/sim.dir/construction.cc.o.d -o CMakeFiles/sim.dir/construction.cc.o -c /home/kaiju/github/research/detector_sim/construction.cc
 
 CMakeFiles/sim.dir/construction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/construction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/construction.cc > CMakeFiles/sim.dir/construction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/construction.cc > CMakeFiles/sim.dir/construction.cc.i
 
 CMakeFiles/sim.dir/construction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/construction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/construction.cc -o CMakeFiles/sim.dir/construction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/construction.cc -o CMakeFiles/sim.dir/construction.cc.s
 
 CMakeFiles/sim.dir/detector.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/detector.cc.o: ../detector.cc
 CMakeFiles/sim.dir/detector.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/detector.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/detector.cc.o -MF CMakeFiles/sim.dir/detector.cc.o.d -o CMakeFiles/sim.dir/detector.cc.o -c /home/kaiju/sim/geant4/detector.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/detector.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/detector.cc.o -MF CMakeFiles/sim.dir/detector.cc.o.d -o CMakeFiles/sim.dir/detector.cc.o -c /home/kaiju/github/research/detector_sim/detector.cc
 
 CMakeFiles/sim.dir/detector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/detector.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/detector.cc > CMakeFiles/sim.dir/detector.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/detector.cc > CMakeFiles/sim.dir/detector.cc.i
 
 CMakeFiles/sim.dir/detector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/detector.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/detector.cc -o CMakeFiles/sim.dir/detector.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/detector.cc -o CMakeFiles/sim.dir/detector.cc.s
 
 CMakeFiles/sim.dir/event.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/event.cc.o: ../event.cc
 CMakeFiles/sim.dir/event.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/event.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/event.cc.o -MF CMakeFiles/sim.dir/event.cc.o.d -o CMakeFiles/sim.dir/event.cc.o -c /home/kaiju/sim/geant4/event.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/event.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/event.cc.o -MF CMakeFiles/sim.dir/event.cc.o.d -o CMakeFiles/sim.dir/event.cc.o -c /home/kaiju/github/research/detector_sim/event.cc
 
 CMakeFiles/sim.dir/event.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/event.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/event.cc > CMakeFiles/sim.dir/event.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/event.cc > CMakeFiles/sim.dir/event.cc.i
 
 CMakeFiles/sim.dir/event.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/event.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/event.cc -o CMakeFiles/sim.dir/event.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/event.cc -o CMakeFiles/sim.dir/event.cc.s
 
 CMakeFiles/sim.dir/generator.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/generator.cc.o: ../generator.cc
 CMakeFiles/sim.dir/generator.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/generator.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/generator.cc.o -MF CMakeFiles/sim.dir/generator.cc.o.d -o CMakeFiles/sim.dir/generator.cc.o -c /home/kaiju/sim/geant4/generator.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/generator.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/generator.cc.o -MF CMakeFiles/sim.dir/generator.cc.o.d -o CMakeFiles/sim.dir/generator.cc.o -c /home/kaiju/github/research/detector_sim/generator.cc
 
 CMakeFiles/sim.dir/generator.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/generator.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/generator.cc > CMakeFiles/sim.dir/generator.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/generator.cc > CMakeFiles/sim.dir/generator.cc.i
 
 CMakeFiles/sim.dir/generator.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/generator.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/generator.cc -o CMakeFiles/sim.dir/generator.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/generator.cc -o CMakeFiles/sim.dir/generator.cc.s
 
 CMakeFiles/sim.dir/myHit.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/myHit.cc.o: ../myHit.cc
 CMakeFiles/sim.dir/myHit.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/myHit.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/myHit.cc.o -MF CMakeFiles/sim.dir/myHit.cc.o.d -o CMakeFiles/sim.dir/myHit.cc.o -c /home/kaiju/sim/geant4/myHit.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/myHit.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/myHit.cc.o -MF CMakeFiles/sim.dir/myHit.cc.o.d -o CMakeFiles/sim.dir/myHit.cc.o -c /home/kaiju/github/research/detector_sim/myHit.cc
 
 CMakeFiles/sim.dir/myHit.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/myHit.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/myHit.cc > CMakeFiles/sim.dir/myHit.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/myHit.cc > CMakeFiles/sim.dir/myHit.cc.i
 
 CMakeFiles/sim.dir/myHit.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/myHit.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/myHit.cc -o CMakeFiles/sim.dir/myHit.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/myHit.cc -o CMakeFiles/sim.dir/myHit.cc.s
+
+CMakeFiles/sim.dir/myparam.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/myparam.cc.o: ../myparam.cc
+CMakeFiles/sim.dir/myparam.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/myparam.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/myparam.cc.o -MF CMakeFiles/sim.dir/myparam.cc.o.d -o CMakeFiles/sim.dir/myparam.cc.o -c /home/kaiju/github/research/detector_sim/myparam.cc
+
+CMakeFiles/sim.dir/myparam.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/myparam.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/myparam.cc > CMakeFiles/sim.dir/myparam.cc.i
+
+CMakeFiles/sim.dir/myparam.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/myparam.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/myparam.cc -o CMakeFiles/sim.dir/myparam.cc.s
 
 CMakeFiles/sim.dir/physics.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/physics.cc.o: ../physics.cc
 CMakeFiles/sim.dir/physics.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/physics.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/physics.cc.o -MF CMakeFiles/sim.dir/physics.cc.o.d -o CMakeFiles/sim.dir/physics.cc.o -c /home/kaiju/sim/geant4/physics.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/physics.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/physics.cc.o -MF CMakeFiles/sim.dir/physics.cc.o.d -o CMakeFiles/sim.dir/physics.cc.o -c /home/kaiju/github/research/detector_sim/physics.cc
 
 CMakeFiles/sim.dir/physics.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/physics.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/physics.cc > CMakeFiles/sim.dir/physics.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/physics.cc > CMakeFiles/sim.dir/physics.cc.i
 
 CMakeFiles/sim.dir/physics.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/physics.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/physics.cc -o CMakeFiles/sim.dir/physics.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/physics.cc -o CMakeFiles/sim.dir/physics.cc.s
 
 CMakeFiles/sim.dir/run.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/run.cc.o: ../run.cc
 CMakeFiles/sim.dir/run.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/run.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/run.cc.o -MF CMakeFiles/sim.dir/run.cc.o.d -o CMakeFiles/sim.dir/run.cc.o -c /home/kaiju/sim/geant4/run.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sim.dir/run.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/run.cc.o -MF CMakeFiles/sim.dir/run.cc.o.d -o CMakeFiles/sim.dir/run.cc.o -c /home/kaiju/github/research/detector_sim/run.cc
 
 CMakeFiles/sim.dir/run.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/run.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/sim/geant4/run.cc > CMakeFiles/sim.dir/run.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaiju/github/research/detector_sim/run.cc > CMakeFiles/sim.dir/run.cc.i
 
 CMakeFiles/sim.dir/run.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/run.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/sim/geant4/run.cc -o CMakeFiles/sim.dir/run.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaiju/github/research/detector_sim/run.cc -o CMakeFiles/sim.dir/run.cc.s
 
 # Object files for target sim
 sim_OBJECTS = \
@@ -204,6 +218,7 @@ sim_OBJECTS = \
 "CMakeFiles/sim.dir/event.cc.o" \
 "CMakeFiles/sim.dir/generator.cc.o" \
 "CMakeFiles/sim.dir/myHit.cc.o" \
+"CMakeFiles/sim.dir/myparam.cc.o" \
 "CMakeFiles/sim.dir/physics.cc.o" \
 "CMakeFiles/sim.dir/run.cc.o"
 
@@ -217,6 +232,7 @@ sim: CMakeFiles/sim.dir/detector.cc.o
 sim: CMakeFiles/sim.dir/event.cc.o
 sim: CMakeFiles/sim.dir/generator.cc.o
 sim: CMakeFiles/sim.dir/myHit.cc.o
+sim: CMakeFiles/sim.dir/myparam.cc.o
 sim: CMakeFiles/sim.dir/physics.cc.o
 sim: CMakeFiles/sim.dir/run.cc.o
 sim: CMakeFiles/sim.dir/build.make
@@ -268,7 +284,7 @@ sim: /home/kaiju/software/geant4/geant4-v11.0.2-install/lib/libG4global.so
 sim: /home/kaiju/software/geant4/geant4-v11.0.2-install/lib/libG4clhep.so
 sim: /home/kaiju/software/geant4/geant4-v11.0.2-install/lib/libG4ptl.so.0.0.2
 sim: CMakeFiles/sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kaiju/sim/geant4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kaiju/github/research/detector_sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -280,6 +296,6 @@ CMakeFiles/sim.dir/clean:
 .PHONY : CMakeFiles/sim.dir/clean
 
 CMakeFiles/sim.dir/depend:
-	cd /home/kaiju/sim/geant4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kaiju/sim/geant4 /home/kaiju/sim/geant4 /home/kaiju/sim/geant4/build /home/kaiju/sim/geant4/build /home/kaiju/sim/geant4/build/CMakeFiles/sim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kaiju/github/research/detector_sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kaiju/github/research/detector_sim /home/kaiju/github/research/detector_sim /home/kaiju/github/research/detector_sim/build /home/kaiju/github/research/detector_sim/build /home/kaiju/github/research/detector_sim/build/CMakeFiles/sim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sim.dir/depend
 

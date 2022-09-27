@@ -1,5 +1,7 @@
-CMakeFiles/sim.dir/physics.cc.o: /home/kaiju/sim/geant4/physics.cc \
- /usr/include/stdc-predef.h /home/kaiju/sim/geant4/physics.hh \
+CMakeFiles/sim.dir/physics.cc.o: \
+ /home/kaiju/github/research/detector_sim/physics.cc \
+ /usr/include/stdc-predef.h \
+ /home/kaiju/github/research/detector_sim/physics.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VModularPhysicsList.hh \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

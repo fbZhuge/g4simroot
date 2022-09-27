@@ -1,5 +1,7 @@
-CMakeFiles/sim.dir/event.cc.o: /home/kaiju/sim/geant4/event.cc \
- /usr/include/stdc-predef.h /home/kaiju/sim/geant4/event.hh \
+CMakeFiles/sim.dir/event.cc.o: \
+ /home/kaiju/github/research/detector_sim/event.cc \
+ /usr/include/stdc-predef.h \
+ /home/kaiju/github/research/detector_sim/event.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UserEventAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Event.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/globals.hh \
@@ -355,7 +357,7 @@ CMakeFiles/sim.dir/event.cc.o: /home/kaiju/sim/geant4/event.cc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericAnalysisManager.icc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericFileManager.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericFileManager.icc \
- /home/kaiju/sim/geant4/run.hh \
+ /home/kaiju/github/research/detector_sim/run.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UserRunAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Run.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UnitsTable.hh \

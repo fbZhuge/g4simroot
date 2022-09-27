@@ -1,6 +1,7 @@
 CMakeFiles/sim.dir/construction.cc.o: \
- /home/kaiju/sim/geant4/construction.cc /usr/include/stdc-predef.h \
- /home/kaiju/sim/geant4/construction.hh \
+ /home/kaiju/github/research/detector_sim/construction.cc \
+ /usr/include/stdc-predef.h \
+ /home/kaiju/github/research/detector_sim/construction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -342,7 +343,7 @@ CMakeFiles/sim.dir/construction.cc.o: \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ICRU90StoppingData.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Pow.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4SystemOfUnits.hh \
- /home/kaiju/sim/geant4/detector.hh \
+ /home/kaiju/github/research/detector_sim/detector.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VSensitiveDetector.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VHit.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Step.hh \
@@ -598,7 +599,7 @@ CMakeFiles/sim.dir/construction.cc.o: \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4TrackingMessenger.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UserTrackingAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4RunManagerKernel.hh \
- /home/kaiju/sim/geant4/myHit.hh \
+ /home/kaiju/github/research/detector_sim/myHit.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VHit.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4THitsCollection.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Allocator.hh \

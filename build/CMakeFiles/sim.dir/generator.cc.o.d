@@ -1,5 +1,7 @@
-CMakeFiles/sim.dir/generator.cc.o: /home/kaiju/sim/geant4/generator.cc \
- /usr/include/stdc-predef.h /home/kaiju/sim/geant4/generator.hh \
+CMakeFiles/sim.dir/generator.cc.o: \
+ /home/kaiju/github/research/detector_sim/generator.cc \
+ /usr/include/stdc-predef.h \
+ /home/kaiju/github/research/detector_sim/generator.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ParticleGun.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/globals.hh \

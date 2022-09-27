@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sim.dir/generator.cc.o.d"
   "CMakeFiles/sim.dir/myHit.cc.o"
   "CMakeFiles/sim.dir/myHit.cc.o.d"
+  "CMakeFiles/sim.dir/myparam.cc.o"
+  "CMakeFiles/sim.dir/myparam.cc.o.d"
   "CMakeFiles/sim.dir/physics.cc.o"
   "CMakeFiles/sim.dir/physics.cc.o.d"
   "CMakeFiles/sim.dir/run.cc.o"

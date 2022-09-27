@@ -1,5 +1,7 @@
-CMakeFiles/sim.dir/run.cc.o: /home/kaiju/sim/geant4/run.cc \
- /usr/include/stdc-predef.h /home/kaiju/sim/geant4/run.hh \
+CMakeFiles/sim.dir/run.cc.o: \
+ /home/kaiju/github/research/detector_sim/run.cc \
+ /usr/include/stdc-predef.h \
+ /home/kaiju/github/research/detector_sim/run.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UserRunAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Types.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GlobalConfig.hh \

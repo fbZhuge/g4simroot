@@ -1,5 +1,7 @@
-CMakeFiles/sim.dir/myHit.cc.o: /home/kaiju/sim/geant4/myHit.cc \
- /usr/include/stdc-predef.h /home/kaiju/sim/geant4/myHit.hh \
+CMakeFiles/sim.dir/myHit.cc.o: \
+ /home/kaiju/github/research/detector_sim/myHit.cc \
+ /usr/include/stdc-predef.h \
+ /home/kaiju/github/research/detector_sim/myHit.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VHit.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/globals.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ios.hh \

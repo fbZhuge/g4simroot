@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kaiju/sim/geant4
+CMAKE_SOURCE_DIR = /home/kaiju/github/research/detector_sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kaiju/sim/geant4/build
+CMAKE_BINARY_DIR = /home/kaiju/github/research/detector_sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaiju/sim/geant4/build/CMakeFiles /home/kaiju/sim/geant4/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaiju/github/research/detector_sim/build/CMakeFiles /home/kaiju/github/research/detector_sim/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaiju/sim/geant4/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaiju/github/research/detector_sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -286,6 +286,30 @@ myHit.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/myHit.cc.s
 .PHONY : myHit.cc.s
 
+myparam.o: myparam.cc.o
+.PHONY : myparam.o
+
+# target to build an object file
+myparam.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/myparam.cc.o
+.PHONY : myparam.cc.o
+
+myparam.i: myparam.cc.i
+.PHONY : myparam.i
+
+# target to preprocess a source file
+myparam.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/myparam.cc.i
+.PHONY : myparam.cc.i
+
+myparam.s: myparam.cc.s
+.PHONY : myparam.s
+
+# target to generate assembly for a file
+myparam.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/myparam.cc.s
+.PHONY : myparam.cc.s
+
 physics.o: physics.cc.o
 .PHONY : physics.o
 
@@ -386,6 +410,9 @@ help:
 	@echo "... myHit.o"
 	@echo "... myHit.i"
 	@echo "... myHit.s"
+	@echo "... myparam.o"
+	@echo "... myparam.i"
+	@echo "... myparam.s"
 	@echo "... physics.o"
 	@echo "... physics.i"
 	@echo "... physics.s"

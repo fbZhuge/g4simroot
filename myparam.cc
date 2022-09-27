@@ -14,7 +14,7 @@
 #include "G4NistManager.hh"
 
 
-myParamModel::myParamModel(G4String modelName, G4Region* envelope)
+MyParamModel::MyParamModel(G4String modelName, G4Region* envelope)
 : G4VFastSimulationModel(modelName, envelope)
 {
   fFakeStep          = new G4Step();
@@ -27,7 +27,7 @@ myParamModel::myParamModel(G4String modelName, G4Region* envelope)
 }
 
 
-myParamModel::myParamModel(G4String modelName)
+MyParamModel::MyParamModel(G4String modelName)
 : G4VFastSimulationModel(modelName)
 {
   fFakeStep          = new G4Step();
@@ -40,14 +40,14 @@ myParamModel::myParamModel(G4String modelName)
 }
 
 
-myParamModel::~myParamModel()
+MyParamModel::~MyParamModel()
 {
   delete fFakeStep;
   delete fpNavigator;
 }
 
 
-G4bool myParamModel::IsApplicable(const G4ParticleDefinition& particleType)
+G4bool MyParamModel::IsApplicable(const G4ParticleDefinition& particleType)
 {
   return
     &particleType == G4Electron::ElectronDefinition() ||
@@ -56,14 +56,14 @@ G4bool myParamModel::IsApplicable(const G4ParticleDefinition& particleType)
 }
 
 
-G4bool myParamModel::ModelTrigger(const G4FastTrack& fastTrack)
+G4bool MyParamModel::ModelTrigger(const G4FastTrack& fastTrack)
 {
   // Applies the parameterisation above 100 MeV:
   return fastTrack.GetPrimaryTrack()->GetKineticEnergy() > 100*MeV;
 }
 
 
-void myParamModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
+void MyParamModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastStep)
 {
   // Kill the parameterised particle:
   fastStep.KillPrimaryTrack();

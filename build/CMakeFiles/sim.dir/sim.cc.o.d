@@ -1,4 +1,5 @@
-CMakeFiles/sim.dir/sim.cc.o: /home/kaiju/sim/geant4/sim.cc \
+CMakeFiles/sim.dir/sim.cc.o: \
+ /home/kaiju/github/research/detector_sim/sim.cc \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -574,7 +575,7 @@ CMakeFiles/sim.dir/sim.cc.o: /home/kaiju/sim/geant4/sim.cc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4RayTracerX.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UIExecutive.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VUIshell.hh \
- /home/kaiju/sim/geant4/construction.hh \
+ /home/kaiju/github/research/detector_sim/construction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VPhysicalVolume.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4LogicalVolume.hh \
@@ -595,7 +596,7 @@ CMakeFiles/sim.dir/sim.cc.o: /home/kaiju/sim/geant4/sim.cc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ICRU90StoppingData.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Pow.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4SystemOfUnits.hh \
- /home/kaiju/sim/geant4/detector.hh \
+ /home/kaiju/github/research/detector_sim/detector.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VSensitiveDetector.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VReadOutGeometry.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4SensitiveVolumeList.hh \
@@ -661,12 +662,12 @@ CMakeFiles/sim.dir/sim.cc.o: /home/kaiju/sim/geant4/sim.cc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericAnalysisManager.icc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericFileManager.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericFileManager.icc \
- /home/kaiju/sim/geant4/myHit.hh \
+ /home/kaiju/github/research/detector_sim/myHit.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VHit.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4THitsCollection.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Allocator.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ThreeVector.hh \
- /home/kaiju/sim/geant4/physics.hh \
+ /home/kaiju/github/research/detector_sim/physics.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VModularPhysicsList.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VPhysicsConstructor.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4PhysicsListHelper.hh \
@@ -735,16 +736,16 @@ CMakeFiles/sim.dir/sim.cc.o: /home/kaiju/sim/geant4/sim.cc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4EmStandardPhysics.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4OpticalPhysics.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4OpticalParameters.hh \
- /home/kaiju/sim/geant4/action.hh \
+ /home/kaiju/github/research/detector_sim/action.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VUserActionInitialization.hh \
- /home/kaiju/sim/geant4/generator.hh \
+ /home/kaiju/github/research/detector_sim/generator.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ParticleGun.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VPrimaryGenerator.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ParticleTable.hh \
- /home/kaiju/sim/geant4/event.hh \
+ /home/kaiju/github/research/detector_sim/event.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UserEventAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Event.hh \
- /home/kaiju/sim/geant4/run.hh \
+ /home/kaiju/github/research/detector_sim/run.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UserRunAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Run.hh

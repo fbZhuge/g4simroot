@@ -1,7 +1,9 @@
-CMakeFiles/sim.dir/action.cc.o: /home/kaiju/sim/geant4/action.cc \
- /usr/include/stdc-predef.h /home/kaiju/sim/geant4/action.hh \
+CMakeFiles/sim.dir/action.cc.o: \
+ /home/kaiju/github/research/detector_sim/action.cc \
+ /usr/include/stdc-predef.h \
+ /home/kaiju/github/research/detector_sim/action.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VUserActionInitialization.hh \
- /home/kaiju/sim/geant4/generator.hh \
+ /home/kaiju/github/research/detector_sim/generator.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ParticleGun.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/globals.hh \
@@ -278,7 +280,7 @@ CMakeFiles/sim.dir/action.cc.o: /home/kaiju/sim/geant4/action.cc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ParticleTableIterator.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4ParticleTable.icc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4SystemOfUnits.hh \
- /home/kaiju/sim/geant4/event.hh \
+ /home/kaiju/github/research/detector_sim/event.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UserEventAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Event.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/evtdefs.hh \
@@ -372,6 +374,6 @@ CMakeFiles/sim.dir/action.cc.o: /home/kaiju/sim/geant4/action.cc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericAnalysisManager.icc \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericFileManager.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4GenericFileManager.icc \
- /home/kaiju/sim/geant4/run.hh \
+ /home/kaiju/github/research/detector_sim/run.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4UserRunAction.hh \
  /home/kaiju/software/geant4/geant4-v11.0.2-install/include/Geant4/G4Run.hh
