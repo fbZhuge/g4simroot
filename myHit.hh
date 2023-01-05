@@ -5,7 +5,7 @@
 #include "G4THitsCollection.hh"
 #include "G4Allocator.hh"
 #include "G4ThreeVector.hh"
-// #include "tls.hh"
+#include "tls.hh"
 
 class myHit : public G4VHit
 {
@@ -17,7 +17,6 @@ class myHit : public G4VHit
     // operators
     myHit& operator=(const myHit&) = default;
     G4bool operator==(const myHit&) const;
-
     inline void* operator new(size_t);
     inline void  operator delete(void*);
 
@@ -44,19 +43,14 @@ class myHit : public G4VHit
     G4ThreeVector fPos;
 };
 
-
 typedef G4THitsCollection<myHit> myHitsCollection;
-
-extern G4ThreadLocal G4Allocator<myHit>* myHitAllocator;
-
+extern G4ThreadLocal G4Allocator<myHit> *myHitAllocator;
 
 inline void* myHit::operator new(size_t)
 {
-  if(!myHitAllocator)
-      myHitAllocator = new G4Allocator<myHit>;
+  if(!myHitAllocator) myHitAllocator = new G4Allocator<myHit>;
   return (void *) myHitAllocator->MallocSingle();
 }
-
 
 inline void myHit::operator delete(void *hit)
 {
