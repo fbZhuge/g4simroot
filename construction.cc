@@ -27,7 +27,7 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
 
   // Array of sensitive detectors
   G4double waterBoxSize=0.8*worldSize;
-  G4int numberOfVoxelsPerAxis=9;
+  G4int numberOfVoxelsPerAxis=10;
   G4double voxelSize=waterBoxSize/numberOfVoxelsPerAxis;
 
   G4Box *solidDetector = new G4Box("solidDetector", // name
@@ -48,7 +48,7 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
                                                           "physDetector", // name
                                                           logicWorld, // mother world
                                                           false, // boolean
-                                                          i+j*10+k*100, // copy number
+                                                          i+j*100+k*10000, // copy number
                                                           true); // check overlaps
       }
     }
@@ -58,6 +58,6 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
 
 void MyDetectorConstruction::ConstructSDandField()
 {
-  MySensitiveDetector *sensDet = new MySensitiveDetector("SensitiveDetector", "myHisCollection");
+  MySensitiveDetector* sensDet = new MySensitiveDetector("SensitiveDetector", "myHisCollection");
   logicDetector->SetSensitiveDetector(sensDet);
 }

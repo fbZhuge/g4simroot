@@ -6,6 +6,7 @@
 
 #include "G4AnalysisManager.hh"
 #include "run.hh"
+#include "detector.hh"
 
 class MyEventAction : public G4UserEventAction
 {

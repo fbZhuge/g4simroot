@@ -1,7 +1,7 @@
 import csv
 import numpy as np
 
-NbVoxelsPerAxe=9  # from 1 to 99, it must much numberOfDetectors in construction.cc in Geant4
+NbVoxelsPerAxe=10  # from 1 to 99, it must much numberOfDetectors in construction.cc in Geant4
 water_voxel=np.zeros(shape=(NbVoxelsPerAxe,NbVoxelsPerAxe,NbVoxelsPerAxe),dtype=np.double)
 
 def coordinates_from_chamber_nb(chamber_number, vox_per_axis):
@@ -31,7 +31,7 @@ def chamber_nb_from_coordinates(i, j, k, vox_per_axis):
         return i+1000*j+1000000*k
 
 # open the csv log file and stor the edp in each voxel in a tensor
-filename='/home/kaiju/github/research/detector_sim/build/hits_csv.csv'
+filename='/home/iap_school/github/g4simRoot/build2/hits_csv.csv'
 with open(filename, newline='') as csvfile:
     f = csv.reader(csvfile)
     for row in f:
@@ -81,15 +81,33 @@ for j in range(NbVoxelsPerAxe):
 import matplotlib.pyplot as plt
 
 t = range(1,NbVoxelsPerAxe+1)
-plt.plot(t,sum_z_axis, color="blue")
-plt.show()
+# plt.plot(t,sum_z_axis, color="blue")
+# plt.xlabel("Z direction")
+# plt.ylabel("Energy deposition in Mev")
+# plt.title("Z Energy profile")
+# plt.show()
+
+# plt.bar(t, sum_z_axis, color="blue")
+# plt.show()
+
+#plt.bar(t, sum_x_axis, color="red")
+#plt.show()
+
 
 plt.plot(t, sum_x_axis, color="red")
+plt.xlabel("X direction")
+plt.ylabel("Energy deposition in eV")
+plt.title("X Energy profile")
 plt.show()
+
+#plt.bar(t, sum_y_axis, color="green")
+#plt.show()
 
 plt.plot(t, sum_y_axis, color="green")
+plt.xlabel("Y direction")
+plt.ylabel("Energy deposition in Mev")
+plt.title("Y Energy profile")
 plt.show()
-
 # This import registers the 3D projection, but is otherwise unused.
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 

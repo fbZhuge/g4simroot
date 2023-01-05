@@ -17,10 +17,10 @@ public:
   MyDetectorConstruction();
   ~MyDetectorConstruction();
 
-  virtual G4VPhysicalVolume *Construct();
+  virtual G4VPhysicalVolume* Construct();
   virtual void ConstructSDandField();
 
 private:
-  G4LogicalVolume *logicDetector;
+  G4LogicalVolume* logicDetector;
 };
 #endif

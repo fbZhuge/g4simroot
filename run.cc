@@ -1,34 +1,44 @@
 #include "run.hh"
 
 MyRunAction::MyRunAction(){
-  // G4AnalysisManager *man = G4AnalysisManager::Instance();
-  // man->CreateNtuple("Hits","Hits");
-  // man->CreateNtupleIColumn("Event");
-  // man->CreateNtupleDColumn("positionX");
-  // man->CreateNtupleDColumn("positionY");
-  // man->CreateNtupleDColumn("positionZ");
-  // man->CreateNtupleDColumn("energy");
-  // man->FinishNtuple(0);
+  auto analysisManager = G4AnalysisManager::Instance();
+  G4int verboseLevel=1; // [0..4]
+  analysisManager->SetVerboseLevel(verboseLevel);
 
-  // man->CreateNtuple("Scoring", "Scoring");
-  // man->CreateNtupleDColumn("EnergyDeposit");
-  // man->FinishNtuple(1);
+  analysisManager->CreateNtuple("Energy_Deposits","Edep");
+  analysisManager->CreateNtupleIColumn("Edep");
+
+  analysisManager->CreateNtupleDColumn("Edep_index0");
+  analysisManager->CreateNtupleDColumn("Edep_index1");
+  analysisManager->CreateNtupleDColumn("Edep_index2");
+  analysisManager->CreateNtupleDColumn("Edep_index3");
+  analysisManager->CreateNtupleDColumn("Edep_index4");
+  analysisManager->CreateNtupleDColumn("Edep_index5");
+  analysisManager->CreateNtupleDColumn("Edep_index6");
+  analysisManager->CreateNtupleDColumn("Edep_index7");
+  analysisManager->CreateNtupleDColumn("Edep_index8");
+  analysisManager->CreateNtupleDColumn("Edep_index9");
+
+  analysisManager->FinishNtuple(1);
 }
+
 MyRunAction::~MyRunAction(){}
 
-void MyRunAction::BeginOfRunAction(const G4Run*)
+void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
-  // G4AnalysisManager *man = G4AnalysisManager::Instance();
-  // G4int runID = run->GetRunID();
-  // std::stringstream strRunID;
-  // strRunID << runID;
+  auto analysisManager = G4AnalysisManager::Instance();
 
-  // man->OpenFile("output"+strRunID.str()+".root");
+  G4int runID = run->GetRunID();
+  std::stringstream strRunID;
+  strRunID << runID;
+
+  G4String filename = "myRootFile"+strRunID.str()+".root";
+  analysisManager->OpenFile(filename);
 }
 
 void MyRunAction::EndOfRunAction(const G4Run*)
 {
-  // G4AnalysisManager *man = G4AnalysisManager::Instance();
-  // man->Write();
-  // man->CloseFile();
+  auto analysisManager = G4AnalysisManager::Instance();
+  analysisManager->Write();
+  analysisManager->CloseFile();
 }

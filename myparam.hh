@@ -24,6 +24,5 @@ private:
   G4Navigator                    *fpNavigator;
   G4bool                         fNaviSetup;
   G4Material*                    fCsI;
-
 };
 #endif // MYPARAM_HH

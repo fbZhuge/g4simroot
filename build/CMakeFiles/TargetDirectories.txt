@@ -1,4 +1,0 @@
-/home/kaiju/github/research/detector_sim/build/CMakeFiles/sim.dir
-/home/kaiju/github/research/detector_sim/build/CMakeFiles/Simulation.dir
-/home/kaiju/github/research/detector_sim/build/CMakeFiles/edit_cache.dir
-/home/kaiju/github/research/detector_sim/build/CMakeFiles/rebuild_cache.dir
