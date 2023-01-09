@@ -6,17 +6,21 @@ import time
 BATCH_SIZE = 7*7*256
 
 # prepare data
-(train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.mnist.load_data()
-train_images = train_images.reshape(train_images.shape[0], 28, 28, 1).astype('float32')
-train_images = (train_images - 127.5) / 127.5
-train_dataset = tf.data.Dataset.from_tensor_slices(train_images).shuffle(60000).batch(256)
+# We have a list of water voxels of size 1000x10x10x10 of edeps
+
+# (train_voxels, train_labels), (test_voxels, test_labels) = tf.keras.datasets.mnist.load_data()
+train_voxels = train_voxels.reshape(train_voxels.shape[0], 10, 10, 10, 1).astype('float32')
+# train_dataset = tf.data.Dataset.from_tensor_slices(train_voxels).shuffle(600).batch(100)
+
+# train voxel shape [batchs, 10, 10, 10]
+# load csv data
+# convert the data into a tensor voxel
 
 # the generator net
 def create_generator():
     model = tf.keras.Sequential()
-    
-    # creating Dense layer with units 7*7*256(batch_size) and input_shape of (100,)
-    model.add(layers.Dense(7*7*256, use_bias=False, input_shape=(100,)))
+    # creating Dense layer with units 7*7*256(batch_size) and input_shape of (1000,)
+    model.add(layers.Dense(7*7*256, use_bias=False, input_shape=(1000,)))
     model.add(layers.BatchNormalization())
     model.add(layers.LeakyReLU())
 
@@ -37,7 +41,7 @@ def create_generator():
 # the discriminator net
 def create_discriminator():
     model = tf.keras.Sequential()
-    model.add(layers.Conv2D(64, (5, 5), strides=(2, 2), padding='same', input_shape=[28, 28, 1]))
+    model.add(layers.Conv2D(64, (5, 5), strides=(2, 2), padding='same', input_shape=[10, 10, 10, 1]))
     model.add(layers.LeakyReLU())
     model.add(layers.Dropout(0.3))
 
@@ -58,7 +62,7 @@ def D_loss(real_output, fake_output):
     fake_loss = cross_entropy(tf.zeros_like(fake_output), fake_output)
     total_loss = real_loss + fake_loss
     return total_loss
-  
+
 def G_loss(fake_output):
     return cross_entropy(tf.ones_like(fake_output), fake_output)
 
@@ -66,7 +70,7 @@ def G_loss(fake_output):
 generator_optimizer = tf.keras.optimizers.Adam(1e-4)
 discriminator_optimizer = tf.keras.optimizers.Adam(1e-4)
 
-noise_dim = 100
+noise_dim = 1000
 num_of_generated_examples = 16
 
 seed = tf.random.normal([num_of_generated_examples, noise_dim])
@@ -97,11 +101,8 @@ def train_step(images):
 def train_GAN(dataset, epochs):
   for epoch in range(epochs):
     start = time.time()
-
     for image_batch in dataset:
       train_step(image_batch)
-      
     print ('Time for epoch {} is {} sec'.format(epoch + 1, time.time()-start))
-
 
 train_GAN(train_dataset, 500)

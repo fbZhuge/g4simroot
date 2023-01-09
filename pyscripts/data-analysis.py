@@ -31,7 +31,7 @@ def chamber_nb_from_coordinates(i, j, k, vox_per_axis):
         return i+1000*j+1000000*k
 
 # open the csv log file and stor the edp in each voxel in a tensor
-filename='/home/iap_school/github/g4simRoot/build2/hits_csv.csv'
+filename='/home/iap_school/github/g4simRoot/build/csv_files/run01.csv'
 with open(filename, newline='') as csvfile:
     f = csv.reader(csvfile)
     for row in f:
@@ -47,6 +47,7 @@ with open(filename, newline='') as csvfile:
 #             print(f'ChamberNB = {voxelNb}, i = {i}, j = {j}, k = {k}')
 #             print(f'The Energy deposited in the chamber {voxelNb} is {water_voxel[i,j,k]}')
 
+print(f"Water voxel  =\n {water_voxel}")
 max_edep=np.max(water_voxel)
 print(f"maximum energy deposit is {max_edep}")
 

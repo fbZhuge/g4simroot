@@ -20,7 +20,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
   G4ThreeVector mom(0.,0.,1.);
 
   fParticleGun->SetParticleMomentumDirection(mom);
-  fParticleGun->SetParticleMomentum(1*GeV);
+  fParticleGun->SetParticleMomentum(3.0*GeV);
   fParticleGun->SetParticleDefinition(particle);
   fParticleGun->SetParticlePosition(pos);
 
