@@ -2,40 +2,41 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers
 import time
+import csv
 
 BATCH_SIZE = 7*7*256
 
-# NbVoxelsPerAxe=10  # from 1 to 99, it must much numberOfDetectors in construction.cc in Geant4
-# water_voxel=np.zeros(shape=(NbVoxelsPerAxe,NbVoxelsPerAxe,NbVoxelsPerAxe),dtype=np.double)
+NbVoxelsPerAxe=10  # from 1 to 99, it must much numberOfDetectors in construction.cc in Geant4
+water_voxel=np.zeros(shape=(NbVoxelsPerAxe,NbVoxelsPerAxe,NbVoxelsPerAxe),dtype=np.double)
 
-# def coordinates_from_chamber_nb(chamber_number, vox_per_axis):
-#     chamber_number=int(row[0])
-#     if(vox_per_axis<=9):
-#         i=chamber_number%10
-#         j=((chamber_number-i)//10)%10
-#         k=(((chamber_number-i)//10) - j)//10
-#         return (i,j,k)
-#     elif(10<=vox_per_axis<=99):
-#         i=chamber_number%100
-#         j=((chamber_number-i)//100)%100
-#         k=(((chamber_number-i)//100) - j)//100
-#         return (i,j,k)
-#     else:
-#         i=chamber_number%1000
-#         j=((chamber_number-i)//1000)%1000
-#         k=(((chamber_number-i)//1000) - j)//1000
-#         return (i,j,k)
+def coordinates_from_chamber_nb(chamber_number, vox_per_axis):
+    chamber_number=int(row[0])
+    if(vox_per_axis<=9):
+        i=chamber_number%10
+        j=((chamber_number-i)//10)%10
+        k=(((chamber_number-i)//10) - j)//10
+        return (i,j,k)
+    elif(10<=vox_per_axis<=99):
+        i=chamber_number%100
+        j=((chamber_number-i)//100)%100
+        k=(((chamber_number-i)//100) - j)//100
+        return (i,j,k)
+    else:
+        i=chamber_number%1000
+        j=((chamber_number-i)//1000)%1000
+        k=(((chamber_number-i)//1000) - j)//1000
+        return (i,j,k)
 
-# def chamber_nb_from_coordinates(i, j, k, vox_per_axis):
-#     if(vox_per_axis<=9):
-#         return i+10*j+100*k
-#     elif(10<=vox_per_axis<=99):
-#         return i+100*j+10000*k
-#     else:
-#         return i+1000*j+1000000*k
+def chamber_nb_from_coordinates(i, j, k, vox_per_axis):
+    if(vox_per_axis<=9):
+        return i+10*j+100*k
+    elif(10<=vox_per_axis<=99):
+        return i+100*j+10000*k
+    else:
+        return i+1000*j+1000000*k
 
-# # open the csv log file and stor the edp in each voxel in a tensor
-# filename='/home/iap_school/github/g4simRoot/build/csv_files/run01.csv'
+# open the csv log file and stor the edp in each voxel in a tensor
+# filename='/home/omoikane/github/research/g4simRoot/build/hits_csv.csv'
 # with open(filename, newline='') as csvfile:
 #     f = csv.reader(csvfile)
 #     for row in f:
@@ -44,10 +45,12 @@ BATCH_SIZE = 7*7*256
 #         i,j,k=coordinates_from_chamber_nb(chamberNb, NbVoxelsPerAxe)
 #         water_voxel[i,j,k]+=edep
 
-# use tf.stack to create a batch of water voxels for training
 # train_voxels = tf.stack(water_voxel,water_voxel,water_voxel)
+
+# print(train_voxels.shape)
 # train_voxels = train_voxels.reshape(train_voxels.shape[0], 10, 10, 10, 1).astype('float32')
 # train_dataset = tf.data.Dataset.from_tensor_slices(train_voxels).shuffle(600).batch(100)
+
 
 def create_generator():
     model = tf.keras.Sequential()
@@ -102,13 +105,12 @@ def G_loss(fake_output):
 generator_optimizer = tf.keras.optimizers.Adam(1e-4)
 discriminator_optimizer = tf.keras.optimizers.Adam(1e-4)
 
-noise_dim = 1000
-num_of_generated_examples = 16
-
-seed = tf.random.normal([num_of_generated_examples, noise_dim])
+noise_dim = 10*10*10
 
 generator = create_generator()
+generator.summary()
 discriminator = create_discriminator()
+discriminator.summary()
 
 # the training loop
 @tf.function
@@ -135,4 +137,4 @@ def train_GAN(dataset, epochs):
       train_step(sample_batch)
     print ('Time for epoch {} is {} sec'.format(epoch + 1, time.time()-start))
 
-train_GAN(train_dataset, 500)
+# train_GAN(train_dataset, 500)
